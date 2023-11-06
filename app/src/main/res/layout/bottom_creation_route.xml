@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="20dp"
+    android:background="#171717">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cf_bg_actions"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintVertical_bias="0.02">
+
+        <ImageView
+            android:id="@+id/ivLocationUse"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_margin="10dp"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/location"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tlNoise"
+            android:layout_width="0dp"
+            android:layout_height="95dp"
+            android:gravity="center"
+            android:hint="noise"
+            app:boxBackgroundMode="none"
+            android:layout_marginHorizontal="10dp"
+            app:layout_constraintVertical_bias="0.45"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tlAirquality"
+            android:textColorHint="#CBFFFFFF"
+            app:hintTextColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tfNoise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:letterSpacing="0.1"
+                android:cursorVisible="false"
+                android:inputType="numberDecimal"
+                android:gravity="top"
+                android:textSize="@dimen/_8ssp"
+                android:background="@drawable/cf_bg_input"
+                android:textColor="@color/white"
+                android:lines="1"
+                android:textColorHighlight="@color/black"
+                android:singleLine="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tlAirquality"
+            android:layout_width="0dp"
+            android:layout_height="95dp"
+            android:gravity="center"
+            android:hint="airquality"
+            app:boxBackgroundMode="none"
+            android:layout_marginHorizontal="10dp"
+            app:layout_constraintVertical_bias="0.45"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tlNoise"
+            app:layout_constraintEnd_toStartOf="@id/tlForestation"
+            android:textColorHint="#CBFFFFFF"
+            app:hintTextColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tfAirquality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:letterSpacing="0.1"
+                android:cursorVisible="false"
+                android:inputType="numberDecimal"
+                android:gravity="top"
+                android:textSize="@dimen/_8ssp"
+                android:background="@drawable/cf_bg_input"
+                android:textColor="@color/white"
+                android:lines="1"
+                android:textColorHighlight="@color/black"
+                android:singleLine="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tlForestation"
+            android:layout_width="0dp"
+            android:layout_height="95dp"
+            android:gravity="center"
+            android:hint="forestation"
+            app:boxBackgroundMode="none"
+            android:layout_marginHorizontal="10dp"
+            app:layout_constraintVertical_bias="0.45"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tlAirquality"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColorHint="#CBFFFFFF"
+            app:hintTextColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tfForestation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:letterSpacing="0.1"
+                android:cursorVisible="false"
+                android:inputType="numberDecimal"
+                android:gravity="top"
+                android:textSize="@dimen/_8ssp"
+                android:background="@drawable/cf_bg_input"
+                android:textColor="@color/white"
+                android:lines="1"
+                android:textColorHighlight="@color/black"
+                android:singleLine="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/btnCreateLocation"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:padding="15dp"
+        android:background="@null"
+        android:visibility="invisible"
+        android:contextClickable="true"
+        android:src="@drawable/ic_arrow"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintBottom_toBottomOf="@id/location"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        app:layout_constraintStart_toEndOf="@id/location"
+        app:layout_constraintTop_toTopOf="@id/location" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.02" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.98" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

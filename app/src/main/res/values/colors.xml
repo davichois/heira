@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <color name="blue200">#1A2F4B</color>
+    <color name="blue100">#28475C</color>
+    <color name="green200">#2F8886</color>
+    <color name="green100">#84C69B</color>
+
+    <color name="quiet">#5f9cc9</color>
+    <color name="forestation">#3ea556</color>
+    <color name="noisy">#7b53a5</color>
+    <color name="airquality">#c2e7ff</color>
+</resources>
